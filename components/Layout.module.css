@@ -1,0 +1,43 @@
+.header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+}
+
+.navigation {
+    display: flex;
+    gap: 30px;
+    width: 100vw;
+    justify-content: center;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.signButtons {
+    display: flex;
+    width: 98vw;
+    justify-content: flex-end;
+    font-family: monospace;
+}
+
+.link {
+    font-size: 24px;
+    margin: 10px 0px;
+}
+
+.main {
+    min-height: 90vh;
+}
+
+@media (max-width: 670px) {
+    .navigation {
+        gap: 0px;
+    }
+
+    .link {
+        margin: 0 10px;
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,63 @@
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 33vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.flexdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.flexdiv label {
+    margin-bottom: 20px;
+}
+
+.flexdiv button {
+    padding: 3px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media (max-width:500px) and (orientation: portrait) {
+    .form {
+        width: 90vw;
+        height: 40vh;
+    }
+}
+
+@media (max-width:900px) and (orientation: landscape) {
+    .form {
+        width: 60vw;
+        height: 60vh;
+        top: 65%;
+        min-height: 200px;
+    }
+
+    .flexdiv {
+        margin-top: 5px;
+        font-size: 26px;
+    }
+
+    .flexdiv label {
+        margin-bottom: 10px;
+    }
+
+    .flexdiv button {
+        margin-top: 5px;
+    }
+}

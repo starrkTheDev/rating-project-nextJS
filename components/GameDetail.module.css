@@ -1,0 +1,68 @@
+.detail {
+    text-align: center;
+}
+
+.detail img {
+    width: 30vw;
+    border-radius: 20px;
+    border: 3px solid black;
+    max-height: 70vh;
+    box-shadow: 0 3px 18px black;
+}
+
+.title {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.radio {
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.detail p {
+    font-size: 24px;
+}
+
+.rateButton {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+    .detail {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .detail img {
+        width: 300px;
+        height: 350px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    .detail {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 90vh;
+        width: 100vw;
+        justify-content: space-around;
+    }
+
+    .radio {
+        margin-bottom: 0px;
+    }
+
+    .detail img {
+        width: 250px;
+        height: 300px;
+    }
+}

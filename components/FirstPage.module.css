@@ -1,0 +1,112 @@
+.enter {
+    text-align: center;
+    font-size: 46px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 36px;
+}
+
+.main img {
+    width: 350px;
+    height: 350px;
+}
+
+.phrase {
+    max-width: 350px;
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSign {
+    font-size: 24px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #e7b416;
+    cursor: pointer;
+}
+
+.signupPhrase {
+    font-size: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+
+
+    .main {
+        display: flex;
+        height: 70vh;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+
+    .main img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .phrase {
+        max-width: 200px;
+        margin-bottom: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .enter {
+        font-size: 26px;
+        margin-top: 10px;
+        line-height: 40px;
+    }
+
+    .signDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+    .signupPhrase {
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+    .main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .phrase {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .enter {
+        font-size: 30px;
+    }
+
+    .signupPhrase {
+        font-size: 26px;
+    }
+}
