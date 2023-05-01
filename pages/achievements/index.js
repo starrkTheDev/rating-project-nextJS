@@ -17,7 +17,7 @@ const AchievementsPage = (props) => {
 export default AchievementsPage;
 
 export async function getStaticProps() {
-    const client = await MongoClient.connect('mongodb+srv://krystiankaczorek1:sl4b33lo@cluster0.4yy9hyb.mongodb.net/achievements?retryWrites=true&w=majority');
+    const client = await MongoClient.connect('mongodb+srv://krystiankaczorek1:@cluster0.4yy9hyb.mongodb.net/achievements?retryWrites=true&w=majority');
     const db = client.db();
     const achievementsCollection = db.collection('achievements');
     const achievements = await achievementsCollection.find().toArray();
